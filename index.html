@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let Temperature=function (celsius) {
+        this.celsius=celsius;
+        this.getCelsius=function () {
+            return this.celsius;
+        };
+        this.setCelsius=function (celsius) {
+            this.celsius=celsius;
+        };
+        this.Fahrenheit=function () {
+            return this.celsius*9/5+32;
+        };
+    };
+    let temperature=new Temperature(25);
+    let result=temperature.Fahrenheit();
+    alert(result);
+</script>
+</body>
+</html>
